@@ -11,20 +11,18 @@
     <p><a href="index.html">Go back</a></p>
 
     <div class="wrap" style="display: flex; justify-content: center">
-      <button type="button" data-start>Start</button>
-      <button
-        type="button"
-        data-stop=""
-        disabled=""
-        style="margin-left: 10px; margin-right: 10px"
-      >
-        Stop
-      </button>
-
       <label>
         Change color by (ms)
         <input type="number" name="delay" required />
       </label>
+      <button
+        type="button"
+        data-start
+        style="margin-left: 10px; margin-right: 10px"
+      >
+        Start
+      </button>
+      <button type="button" data-stop="" disabled="">Stop</button>
     </div>
 
     <script src="js/01-color-switcher.js" type="module"></script>
