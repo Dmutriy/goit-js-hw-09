@@ -5,12 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Color switcher</title>
     <link rel="stylesheet" href="css/common.css" />
+    <!-- <link rel="stylesheet" href="css/01-color-switcher.css" /> -->
   </head>
   <body>
     <p><a href="index.html">Go back</a></p>
 
-    <button type="button" data-start>Start</button>
-    <button type="button" data-stop>Stop</button>
+    <div class="wrap" style="display: flex; justify-content: center">
+      <button type="button" data-start>Start</button>
+      <button
+        type="button"
+        data-stop=""
+        disabled=""
+        style="margin-left: 10px; margin-right: 10px"
+      >
+        Stop
+      </button>
+
+      <label>
+        Change color by (ms)
+        <input type="number" name="delay" required />
+      </label>
+    </div>
 
     <script src="js/01-color-switcher.js" type="module"></script>
   </body>
